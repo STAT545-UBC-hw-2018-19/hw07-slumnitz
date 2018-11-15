@@ -6,6 +6,8 @@ This assignment and repository is developed and maintained by **Stefanie Lumnitz
 
 ## Content
 
+FOr illustration purposes I decided to create my own R-package. I wanted to learn more about Object oriented programming and found an OO programming style did not suit the `powers` or `foofactors` packages well.
+
 Tasks | Fullfilled | files
 ------|------------|------
 Design your own package | :heavy_check_mark: | [working with spatial data - coordinates points](https://github.com/STAT545-UBC-students/hw07-slumnitz/tree/master/coordinates)
