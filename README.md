@@ -8,10 +8,10 @@ This assignment and repository is developed and maintained by **Stefanie Lumnitz
 
 Tasks | Fullfilled | files
 ------|------------|------
-Design your own package | :heavy_check_mark: | working with spatial data points
-Implement S3 object oriented functions | :heavy_check_mark: | coords object
-Add a family of related functions instead of just one | :heavy_check_mark: | `v` value transformation
-Define and export one or more functions | :heavy_check_mark: | R-function folder
+Design your own package | :heavy_check_mark: | [working with spatial data - coordinates points](https://github.com/STAT545-UBC-students/hw07-slumnitz/tree/master/coordinates)
+Implement S3 object oriented functions | :heavy_check_mark: | [coords](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/R/coords.R) and [vcoords](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/R/vcoords.R) objects
+Add a family of related functions instead of just one | :heavy_check_mark: | [see all functions in R-functions folder](https://github.com/STAT545-UBC-students/hw07-slumnitz/tree/master/coordinates/R)
+Define and export one or more functions | :heavy_check_mark: | [`math.coords` example](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/R/math_coords.R)
 Give function arguments sensible defaults, where relevant. | not relevant | creation of objects at core of package
 Document all exported functions. | :heavy_check_mark: | example documentation
 Include at least three unit tests | :heavy_check_mark: | example test
