@@ -1,0 +1,111 @@
+---
+title: "Using the `coords` package"
+author: "Stefanie Lumnitz"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using the `coords` package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+__Note__: This R package was developed for a class assignment. It is useful but not maintained.
+
+This is an R package that allows you to attach values to coordinate points and manipulate them. This is especially valuable in spatial analysis, if you for example want to compare observations at the same coordinate points for different years, or over different domains. 
+
+```{r}
+library(coordinates)
+```
+
+
+# Create Objects
+
+For illustration purposes, we are generating our own coordinates used in our fieldwork:
+
+```{r, example data}
+lon <- round(rnorm(5), 2) # rounded to two decimal points
+lat <- round(rnorm(5), 2)
+
+coordinates <- coords(lon, lat)
+```
+
+We created a new object in the `coords` class, hereby automatically checking if the data is "clean":
+
+* does not contain NA or Inf values
+* x and y are numeric
+* vectors have the same length
+
+```{r}
+class(coordinates)
+
+coordinates # what does our object contain?
+```
+
+As you can see coordinate pairs are automatically printed in the format `(lon, lat)`. 
+
+
+## Inspect Objects
+
+This package allows us to inspect our `coords` objects with `length()` and `edge()`
+
+```{r}
+length(coordinates) # how many coordinate pairs are there?
+knitr::kable(edge(coordinates)) # what are the edge coorinates?
+```
+
+
+# Add collected values to coordinates
+
+We can also add our, in the field collected values to coordinate pairs:
+
+```{r}
+values <- round(runif(5, 0, 100))
+
+(value_coords <- vcoords(lat, lon, values))
+values(value_coords)
+class(value_coords)
+```
+
+## Analyse or manipulate values
+
+We can manipulate and transform our values in the `vcoords` class. We could:
+
+* Apply a mathematical function to the values
+* add, subtract, multiply or divide corresponding values in two objects, e.g. if we collected values at the same locations over two times
+* compare values in these two objects
+* negate the values
+
+We can use the `Group method` `math.vcoords` for this:
+
+```{r}
+sqrt(value_coords)
+log(value_coords)
+```
+
+In addition we can also use arithmetic methods on our objects values:
+
+```{r}
+value_coords * 20
+value_coords > 50
+```
+
+
+We can furthermore multiply or manipulate values from coordinate points for two `vcoords` class objects:
+
+```{r}
+values_nextyear <- round(runif(5, 0, 100))
+(value_nextyear <- vcoords(lat, lon, values_nextyear))
+
+value_coords * values_nextyear
+value_coords > values_nextyear
+```
+
+
+Check out this [information](https://www.stat.auckland.ac.nz/~stats782/downloads/08-Objects-S3-handouts.pdf) for a deeper understanding of our methodology.
