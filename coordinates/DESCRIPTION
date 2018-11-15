@@ -1,0 +1,17 @@
+Package: coordinates
+Type: Package
+Title: Transform and format spatial information
+Version: 0.1.0
+Authors@R: person("Stefanie", "Lumnitz", email="stefanie.lumnitz@ubc.ca", role = c("aut", "cre"))
+Description: You need to analyse your field data which has been collected over multiple locations?
+  Use this package to format your coordinate data and call functions that allow you to analyse values from different coordinates.
+License: MIT + file LICENCE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Depends: R(>= 2.10.0)

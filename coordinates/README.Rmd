@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+[![Build Status](https://travis-ci.org/vincenzocoia/powers.svg?branch=master)](https://travis-ci.org/vincenzocoia/powers)
+
+__Note__: This R package was developed for a class assignment. It is useful but not maintained. 
+
+# coordinates
+
+This is an R package that allows you to attach values to coordinate points and manipulate them.
+
+## Installation
+
+You can install powers from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("")
+```
+
+## Example
+
+See the vignette for more extensive use, but here's an example:
+
+```{r example}
+powers::reciprocal(2)
+```
+
+## For Developers
+
+(Again, I don't actually intend for anyone to develop this silly package, but if I did, here's what I'd write.)
+
+This package offers the great potential to practice code collaboration and package development. If you are interested in contributing, developing a method that automatically pairs equal coordinate points before value manipulation could be extremely helpful. Check out the [`Ops.coords` method]() for further development.
