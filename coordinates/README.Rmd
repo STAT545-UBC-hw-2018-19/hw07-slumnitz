@@ -26,15 +26,21 @@ You can install powers from github with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("")
+devtools::install_github("STAT545-UBC-students/hw07-slumnitz/coordinates")
 ```
 
 ## Example
 
-See the vignette for more extensive use, but here's an example:
+See the vignette for more extensive use, but here's an example how to create an object under the `coords` class:
 
 ```{r example}
-powers::reciprocal(2)
+library(coordinates)
+
+lon <- round(rnorm(5), 2) # rounded to two decimal points
+lat <- round(rnorm(5), 2)
+
+coordinates <- coords(lon, lat)
+class(coordinates)
 ```
 
 ## For Developers
