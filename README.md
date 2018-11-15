@@ -6,7 +6,7 @@ This assignment and repository is developed and maintained by **Stefanie Lumnitz
 
 ## Content
 
-FOr illustration purposes I decided to create my own R-package. I wanted to learn more about Object oriented programming and found an OO programming style did not suit the `powers` or `foofactors` packages well.
+For illustration purposes I decided to create my own R-package. I wanted to learn more about Object Oriented (OO) programming and found an OO programming style did not suit the `powers` or `foofactors` packages well.
 
 Tasks | Fullfilled | files
 ------|------------|------
