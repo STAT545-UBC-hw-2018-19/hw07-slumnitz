@@ -13,12 +13,12 @@ Implement S3 object oriented functions | :heavy_check_mark: | [coords](https://g
 Add a family of related functions instead of just one | :heavy_check_mark: | [see all functions in R-functions folder](https://github.com/STAT545-UBC-students/hw07-slumnitz/tree/master/coordinates/R)
 Define and export one or more functions | :heavy_check_mark: | [`math.coords` example](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/R/math_coords.R)
 Give function arguments sensible defaults, where relevant. | not relevant | creation of objects at core of package
-Document all exported functions. | :heavy_check_mark: | example documentation
-Include at least three unit tests | :heavy_check_mark: | example test
-Your package should pass check() without errors | :heavy_check_mark: | download and test the package
-Update the README | :heavy_check_mark: | creation of own readme
-Update vignette | :heavy_check_mark: | vignette example
-Modify the instructions telling someone how to install your package. | :heavy_check_mark: | instructions
+Document all exported functions. | :heavy_check_mark: | [document exported and non exported arithmetic method functions](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/R/arithm_vcoords.R)
+Include at least three unit tests | :heavy_check_mark: | example test for [`arithmetic methods`](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/tests/testthat/test_arithm_vcoords.R) and [S3 objects](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/tests/testthat/test_coords.R)
+Your package should pass check() without errors | :heavy_check_mark: | [build is passing](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/README.md)
+Update the README | :heavy_check_mark: | [creation of own README](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/README.md)
+Update vignette | :heavy_check_mark: | [vignette on using `coordinates`](https://github.com/STAT545-UBC-students/hw07-slumnitz/blob/master/coordinates/vignettes/using_coords.Rmd)
+Modify the instructions telling someone how to install your package. | :heavy_check_mark: | instructions on [README.md](https://github.com/STAT545-UBC-students/hw07-slumnitz/tree/master/coordinates)
 
 
 ## Resources
